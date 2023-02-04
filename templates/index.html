@@ -6,6 +6,11 @@
         <title>hello</title>
     </head>
     <body>
-        hello, world
+        <form action="/greet" method="get">
+            <input autocomplete="off" autofocus required name="name" placeholder="Name" type="text">
+            <!--Note that not very good to rely on browser with required as people can edit the html and get access to /greet?name= -->
+            <input type="submit">
+        </form>
+        <!-- hello, {{name}} -->
     </body>
 </html>
